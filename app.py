@@ -1,5 +1,5 @@
 # app_threaded.py
-%%writefile app.py
+# %%writefile app.py
 import streamlit as st
 import time
 import psutil
