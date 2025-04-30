@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 # ------------------ UI CONFIG ------------------ #
-st.set_page_config(page_title="Mood-Based Pop Playlist", layout="centered")
+st.set_page_config(page_title="Mood-Based Playlist", layout="centered")
 st.title("Mood-Based Playlist")
 st.markdown("Let's create your mood-matching playlist from YouTube!")
 
