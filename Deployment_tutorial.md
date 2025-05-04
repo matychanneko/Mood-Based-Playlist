@@ -6,7 +6,7 @@ This guide explains how to deploy the Mood-Based Playlist Generator using either
 
 ## 1. Deploying with Ngrok (Google Colab / Local)
 
-Ngrok allows you to expose your local or notebook-based Streamlit app to the internet through a temporary public URL — ideal for testing or demos.
+Ngrok allows you to expose your local or notebook-based Streamlit app to the internet through a temporary public URL, ideal for testing or demos.
 
 ### Requirements
 - Google Colab or local Jupyter Notebook
@@ -67,7 +67,7 @@ Streamlit Cloud is ideal for live demos, classroom submissions, and public hosti
 youtube_key = "YOUR_YOUTUBE_API_KEY"
 ```
 
-5. Click **Deploy** — a permanent public link will be generated for sharing.
+5. Click **Deploy**, a permanent public link will be generated for sharing.
 
 ---
 
