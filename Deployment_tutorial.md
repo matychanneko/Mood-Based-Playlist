@@ -90,7 +90,7 @@ Streamlit Cloud allows you to deploy your app to the internet easily and without
      youtube_key = st.secrets["api"]["youtube_key"]
      ```
 
-```
+     ```
 ## 3. Deployment Demo Video
 
 📽️ A full walkthrough of the deployment process and app usage is available here:  
