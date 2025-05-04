@@ -1,4 +1,4 @@
-# Tutorial: How to Add a New Mood
+# Tutorial: How to add a new mood
 
 This guide explains how to add a new mood to the Mood-Based Playlist Generator application.
 
