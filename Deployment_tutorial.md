@@ -64,15 +64,14 @@ Streamlit Cloud allows you to deploy your app to the internet easily and without
 
 1. Push your code (`app.py`, `requirements.txt`) to a GitHub repository.
 2. Visit [https://streamlit.io/cloud](https://streamlit.io/cloud) and sign in using your GitHub account.
-3. Click **New App** and connect your GitHub repo.
-4. Configure API key using **Secrets Management**:
+3. Click **New App** then connect your GitHub repo and branch.
+4. Specify the main file path, such as app.py and then click "Deploy".
+5. Configure API key using **Secrets Management**:
    - In your Streamlit Cloud dashboard, add:
 ```toml
 [api]
 youtube_key = "YOUR_YOUTUBE_API_KEY"
 ```
-
-5. Click **Deploy**, a permanent public link will be generated for sharing.
 
 ---
 
