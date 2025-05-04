@@ -56,12 +56,6 @@ The Streamlit dashboard contains the following:
 
 ## 7. Additional Resources
 
-- [Deployment Tutorial](deployment_tutorial.md): Instructions for deploying the app using Ngrok and Streamlit Cloud
-- [Mood Extension Tutorial](tutorial_add_mood.md): How to add new moods to the system
+- [Deployment Tutorial](Deployment_tutorial.md): Instructions for deploying the app using Ngrok and Streamlit Cloud
 - [Demo Video](#): Watch the application in action
 
-## 8. GitHub Repository
-
-Access all code, documents, and assets here:
-
-🔗 [GitHub – Mood-Based Playlist Project](#)
