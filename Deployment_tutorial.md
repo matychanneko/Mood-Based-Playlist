@@ -37,7 +37,7 @@ ngrok.kill()
 conf.get_default().auth_token = "your_ngrok_auth_token"
 ngrok.set_auth_token("your_ngrok_auth_token")
 ```
-> You can get your auth token from: https://dashboard.ngrok.com/get-started/setup
+> You can get your auth token from: [https://dashboard.ngrok.com/get-started/setup](https://dashboard.ngrok.com/get-started/your-authtoken)
 
 4. Create the public tunnel using Ngrok:
 ```python
