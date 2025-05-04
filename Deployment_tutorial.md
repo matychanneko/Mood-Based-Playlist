@@ -92,6 +92,6 @@ Streamlit Cloud allows you to deploy your app to the internet easily and without
 ## 3. Deployment Demo Video
 
 This video demonstrates the system deployed under two different environments: **Ngrok**  and **Streamlit Cloud**. 
-It highlights key differences in accessibility, speed, stability, and ease of setup. The recording shows how the application behaves in both environments using the same mood-based playlist generation task.
+The recording shows how the application behaves in both environments using the same mood-based playlist generation task.
 
 📽️ [Watch Deployment Comparison Video](linkg)
