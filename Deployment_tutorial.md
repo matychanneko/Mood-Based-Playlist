@@ -12,7 +12,7 @@ Ngrok allows you to expose your local or notebook-based Streamlit app to the int
 - Google Colab or local Jupyter Notebook
 - `streamlit` and `pyngrok` installed:
 ```bash
-pip install streamlit pyngrok --quiet
+!pip install streamlit pyngrok --quiet
 ```
 
 ### Steps (for Google Colab)
