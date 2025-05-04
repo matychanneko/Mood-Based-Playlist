@@ -57,5 +57,5 @@ The Streamlit dashboard contains the following:
 ## 7. Additional Resources
 
 - [Deployment Tutorial](Deployment_tutorial.md): Instructions for deploying the app using Ngrok and Streamlit Cloud
-- [Demo Video](#): Watch the application in action
+- [Demo Video](link here): Watch the application in action
 
