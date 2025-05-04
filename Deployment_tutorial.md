@@ -25,7 +25,7 @@ pip install streamlit pyngrok --quiet
 
 2. Start the Streamlit server in the background:
 ```python
-!streamlit run app.py &
+!streamlit run app.py &>/dev/null &
 ```
 
 3. Create the public tunnel using Ngrok:
