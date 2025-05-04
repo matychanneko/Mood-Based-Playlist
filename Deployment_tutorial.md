@@ -1,57 +1,71 @@
 # Deployment Tutorial: Ngrok & Streamlit Cloud
 
-This tutorial explains how to deploy the Mood-Based Playlist Generator using either Ngrok for local testing or Streamlit Cloud for public deployment.
+This tutorial explains how to deploy the Mood-Based Playlist Generator using either **Ngrok** for local/Colab-based testing or **Streamlit Cloud** for public access.
 
 ---
 
-## 1. Deploying with Ngrok (for Local Testing)
+## 1. Deploying with Ngrok (Google Colab / Local)
+
+Ngrok allows you to expose your local or notebook-based Streamlit app to the internet through a temporary public URL — ideal for testing or demos.
 
 ### Requirements
-- Python and Streamlit installed
-- Ngrok installed and logged in
-
-### Steps
-
-1. Launch the Streamlit app:
+- Google Colab or local Jupyter Notebook
+- `streamlit` and `pyngrok` installed:
 ```bash
-streamlit run app.py
+pip install streamlit pyngrok --quiet
 ```
 
-2. In a new terminal window, run:
-```bash
-ngrok http 8501
+### Steps (for Google Colab)
+
+1. Write your app to `app.py` using:
+```python
+%%writefile app.py
+# (your Streamlit app code goes here)
 ```
 
-3. Ngrok will generate a public URL like `https://xxxx.ngrok.io` - copy and share this to access your app remotely.
+2. Start the Streamlit server in the background:
+```python
+!streamlit run app.py &
+```
 
-Note: Your local machine must remain running for Ngrok to work.
+3. Create the public tunnel using Ngrok:
+```python
+from pyngrok import ngrok
+public_url = ngrok.connect(port=8501)
+print("Streamlit app available at:", public_url)
+```
+
+4. Click the printed link to access the web app.
+
+> Make sure to input your YouTube API key in the app when prompted.
 
 ---
 
-## 2. Deploying with Streamlit Cloud (for Public Access)
+## 2. Deploying with Streamlit Cloud (Public Deployment)
+
+Streamlit Cloud is ideal for live demos, classroom submissions, and public hosting.
 
 ### Requirements
-- GitHub account with your project uploaded
+- GitHub repository with your project
 - Streamlit Cloud account
 
 ### Steps
 
-1. Push your full project (including `app.py`, `requirements.txt`, etc.) to a GitHub repository.
+1. Push your code (`app.py`, `requirements.txt`) to a GitHub repository.
 2. Visit [https://streamlit.io/cloud](https://streamlit.io/cloud)
-3. Click "New app" and link your GitHub repository.
-4. Configure your secrets (API key) by creating a `secrets.toml` in the Cloud settings:
-
+3. Click **New App** and connect your GitHub repo.
+4. Configure API key using **Secrets Management**:
+   - In your Streamlit Cloud dashboard, add:
 ```toml
 [api]
 youtube_key = "YOUR_YOUTUBE_API_KEY"
 ```
 
-5. Click "Deploy" — your app will be accessible via a permanent public URL.
+5. Click **Deploy** — a permanent public link will be generated for sharing.
 
 ---
 
-## 3. Demo Video
+## 3. Deployment Demo Video
 
-A demonstration of the full deployment process and live application is available here:
-
-📽️ [Deployment Demo Video](link here) 
+📽️ A full walkthrough of the deployment process and app usage is available here:  
+🔗 [Deployment Demo Video](link here) 
