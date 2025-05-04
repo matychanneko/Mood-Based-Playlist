@@ -22,7 +22,7 @@ streamlit run app.py
 ngrok http 8501
 ```
 
-3. Ngrok will generate a public URL like `https://xxxx.ngrok.io` — copy and share this to access your app remotely.
+3. Ngrok will generate a public URL like `https://xxxx.ngrok.io` - copy and share this to access your app remotely.
 
 Note: Your local machine must remain running for Ngrok to work.
 
@@ -54,4 +54,4 @@ youtube_key = "YOUR_YOUTUBE_API_KEY"
 
 A demonstration of the full deployment process and live application is available here:
 
-📽️ [Deployment Demo Video](#) <!-- Replace with actual link -->
+📽️ [Deployment Demo Video](#) <!-- https://www.youtube.com/ -->
