@@ -1,12 +1,12 @@
 # Deployment Tutorial: Ngrok & Streamlit Cloud
 
-This tutorial explains how to deploy the Mood-Based Playlist Generator using either **Ngrok** for local/Colab-based testing or **Streamlit Cloud** for public access.
+This guide explains how to deploy the Mood-Based Playlist Generator using either **Ngrok** for local/Colab-based testing or **Streamlit Cloud** for public access.
 
 ---
 
 ## 1. Deploying with Ngrok (Google Colab / Local)
 
-Ngrok allows you to expose your local or notebook-based Streamlit app to the internet through a temporary public URL - ideal for testing or demos.
+Ngrok allows you to expose your local or notebook-based Streamlit app to the internet through a temporary public URL — ideal for testing or demos.
 
 ### Requirements
 - Google Colab or local Jupyter Notebook
@@ -23,19 +23,25 @@ pip install streamlit pyngrok --quiet
 # (your Streamlit app code goes here)
 ```
 
-2. Start the Streamlit server in the background:
-```python
+2. Start the Streamlit server in the background (silently):
+```bash
 !streamlit run app.py &>/dev/null &
 ```
 
-3. Create the public tunnel using Ngrok:
+3. Authenticate Ngrok (only required once):
+```python
+!ngrok config add-authtoken YOUR_AUTHTOKEN
+```
+> You can get your auth token from: https://dashboard.ngrok.com/get-started/setup
+
+4. Create the public tunnel using Ngrok:
 ```python
 from pyngrok import ngrok
 public_url = ngrok.connect(port=8501)
 print("Streamlit app available at:", public_url)
 ```
 
-4. Click the printed link to access the web app.
+5. Click the printed link to access the web app.
 
 > Make sure to input your YouTube API key in the app when prompted.
 
@@ -68,4 +74,4 @@ youtube_key = "YOUR_YOUTUBE_API_KEY"
 ## 3. Deployment Demo Video
 
 📽️ A full walkthrough of the deployment process and app usage is available here:  
-🔗 [Deployment Demo Video](link here) 
+🔗 [Deployment Demo Video](link here)
