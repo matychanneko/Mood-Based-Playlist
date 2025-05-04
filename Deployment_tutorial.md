@@ -28,16 +28,21 @@ pip install streamlit pyngrok --quiet
 !streamlit run app.py &>/dev/null &
 ```
 
-3. Authenticate Ngrok (only required once):
+3. Setup ngrok to create a public URL:
 ```python
-!ngrok config add-authtoken YOUR_AUTHTOKEN
+from pyngrok import ngrok, conf
+ngrok.kill()
+
+# Set ngrok auth token
+conf.get_default().auth_token = "your_ngrok_auth_token"
+ngrok.set_auth_token("your_ngrok_auth_token")
 ```
 > You can get your auth token from: https://dashboard.ngrok.com/get-started/setup
 
 4. Create the public tunnel using Ngrok:
 ```python
 from pyngrok import ngrok
-public_url = ngrok.connect(port=8501)
+public_url = ngrok.connect(addr="8501")
 print("Streamlit app available at:", public_url)
 ```
 
