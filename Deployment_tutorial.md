@@ -54,7 +54,7 @@ print("Streamlit app available at:", public_url)
 
 ## 2. Deploying with Streamlit Cloud (Public Deployment)
 
-Streamlit Cloud is ideal for live demos, classroom submissions, and public hosting.
+Streamlit Cloud allows you to deploy your app to the internet easily and without local hosting.
 
 ### Requirements
 - GitHub repository with your project
@@ -63,7 +63,7 @@ Streamlit Cloud is ideal for live demos, classroom submissions, and public hosti
 ### Steps
 
 1. Push your code (`app.py`, `requirements.txt`) to a GitHub repository.
-2. Visit [https://streamlit.io/cloud](https://streamlit.io/cloud)
+2. Visit [https://streamlit.io/cloud](https://streamlit.io/cloud) and sign in using your GitHub account.
 3. Click **New App** and connect your GitHub repo.
 4. Configure API key using **Secrets Management**:
    - In your Streamlit Cloud dashboard, add:
